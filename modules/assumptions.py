@@ -3,6 +3,7 @@
 # One-time costs
 MAKE_READY_COST = 2000
 CLOSING_COSTS = 8094  # Estimate or percent of purchase
+TOTAL_CASH_REQUIRED = (DOWN_PAYMENT_PCT * PROPERTY_PRICE) + CLOSING_COSTS + MAKE_READY_COST
 
 # Property and financing
 PROPERTY_PRICE = 134900
