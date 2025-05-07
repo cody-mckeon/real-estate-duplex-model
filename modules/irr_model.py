@@ -1,4 +1,4 @@
-import numpy as np
+import numpy_financial as npf
 
 def calculate_resale_price(purchase_price, appreciation_rate=0.03, years=5):
     return purchase_price * (1 + appreciation_rate) ** years
@@ -15,4 +15,4 @@ def calculate_remaining_loan_balance(loan_amount, annual_rate, loan_term_years, 
 def calculate_irr(annual_cash_flow, initial_investment, resale_price, loan_balance, selling_cost_pct=0.06):
     net_proceeds = resale_price * (1 - selling_cost_pct) - loan_balance
     cash_flows = [-initial_investment] + [annual_cash_flow] * 4 + [annual_cash_flow + net_proceeds]
-    return np.irr(cash_flows)
+    return npf.irr(cash_flows)
