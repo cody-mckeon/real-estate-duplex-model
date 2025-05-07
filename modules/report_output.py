@@ -17,6 +17,7 @@ def generate_text_report(
     capex_cost,
     closing_costs
 ):
+    total_cash_required = down_payment + capex_cost + closing_costs
     report = f"""🏠 Investment Summary: {address}
 
 Key Metrics:
@@ -37,6 +38,8 @@ Assumptions:
 • Maintenance & CapEx: {maintenance_pct:.0%} of rent
 • Make-Ready CapEx: ${capex_cost:,.2f}
 • Closing Costs: ${closing_costs:,.2f} ({(closing_costs / purchase_price):.0%})
+• Total Upfront Cash Required: ${total_cash_required:,.2f}
+
 
 Summary:
 This Lansing duplex offers solid cash flow and long-term upside in a landlord-friendly market. Great fit for a conservative rental portfolio.
