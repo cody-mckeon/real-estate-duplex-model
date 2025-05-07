@@ -16,7 +16,8 @@ def generate_text_report(
     maintenance_pct,
     capex_cost,
     closing_costs,
-    monthly_cash_flow
+    monthly_cash_flow,
+    break_even_rent_monthly
 ):
     total_cash_required = down_payment + capex_cost + closing_costs
     report = f"""🏠 Investment Summary: {address}
@@ -28,6 +29,8 @@ Key Metrics:
 • Annual Rent: ${annual_rent:,.2f}
 • Estimated Resale Price (Year 5): ${estimated_resale:,.2f}
 • Monthly Cash Flow: ${monthly_cash_flow:,.2f} – NOI minus mortgage payments
+• Break-Even Rent: ${break_even_rent_monthly:,.2f} – Covers all expenses + mortgage
+
 
 Assumptions:
 • Purchase Price: ${purchase_price:,.2f}
