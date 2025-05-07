@@ -17,7 +17,8 @@ def generate_text_report(
     capex_cost,
     closing_costs,
     monthly_cash_flow,
-    break_even_rent_monthly
+    break_even_rent_monthly,
+    safety_margin_pct
 ):
     total_cash_required = down_payment + capex_cost + closing_costs
     report = f"""🏠 Investment Summary: {address}
@@ -30,6 +31,7 @@ Key Metrics:
 • Estimated Resale Price (Year 5): ${estimated_resale:,.2f}
 • Monthly Cash Flow: ${monthly_cash_flow:,.2f} – NOI minus mortgage payments
 • Break-Even Rent: ${break_even_rent_monthly:,.2f} – Covers all expenses + mortgage
+• Safety Margin: {safety_margin_pct:.1%} – Rent is above break-even by this %
 
 
 Assumptions:
