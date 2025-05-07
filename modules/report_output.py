@@ -15,7 +15,8 @@ def generate_text_report(
     mgmt_pct,
     maintenance_pct,
     capex_cost,
-    closing_costs
+    closing_costs,
+    monthly_cash_flow
 ):
     total_cash_required = down_payment + capex_cost + closing_costs
     report = f"""🏠 Investment Summary: {address}
@@ -26,6 +27,7 @@ Key Metrics:
 • 5-Year IRR: {irr:.2%} – Annualized return with appreciation and resale
 • Annual Rent: ${annual_rent:,.2f}
 • Estimated Resale Price (Year 5): ${estimated_resale:,.2f}
+• Monthly Cash Flow: ${monthly_cash_flow:,.2f} – NOI minus mortgage payments
 
 Assumptions:
 • Purchase Price: ${purchase_price:,.2f}
