@@ -2,10 +2,10 @@
 
 # One-time costs
 MAKE_READY_COST = 2000
-CLOSING_COSTS = 9000  # Estimate or percent of purchase
+CLOSING_COSTS = 4200  # Estimate or percent of purchase
 
 # Property and financing
-PROPERTY_PRICE = 135000
+PROPERTY_PRICE = 145000
 DOWN_PAYMENT_PCT = 0.20
 LOAN_RATE = 0.07
 LOAN_TERM_YEARS = 30
